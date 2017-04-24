@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			margin:100px auto;
+			animation: turnaround 10s linear 3s infinite;
+		}
+		.box2{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			margin:500px auto;
+			animation: ture 10s infinite;
+		}
+
+		@keyframes turnaround{
+			0%{
+				transform: rotate(0deg);
+				width: 100px;
+				height: 100px;
+				background-color: #f00;
+			}
+			30%{
+				background-color: #00f;
+			}
+			50%{
+				transform: rotate(720deg);
+				width: 300px;
+				height: 10px;
+			}
+			80%{
+				background-color: #ff0;
+			}
+			100%{
+				transform: rotate(0deg);
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		@keyframes ture{
+			form{
+				width: 100px;
+			}
+			to{
+				width: 500px
+			}
+		}
+
+		.box1:hover{
+			animation-play-state: paused;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
